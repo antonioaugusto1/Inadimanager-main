@@ -92,14 +92,14 @@ unset ($_SESSION['telefone']);
                                 ?>
                                 <tr>
                                     <td style="display:none;"><?= $dados['cod'] ?></td>
-                                    <td><?= $dados['nome'] ?></td>
+                                    <td><a href="detalhes_cliente.php?cod=<?=$dados['cod'] ?>"><?= $dados['nome'] ?></a></td>
                                     <td><?= $dados['cpf'] ?></td>
                                     <td><?= $dados['email'] ?></td>
                                     <td><?= $dados['endereco'] ?></td>
                                     <td><?= $dados['numero'] ?></td>
                                     <td><?= $dados['bairro'] ?></td>
                                     <td><?= $dados['cidade'] ?></td>
-                                    <td><?= $dados['telefone'] ?></td>   
+                                    <td><?= $dados['telefone'] ?></td>
                                     <td class="text-center"> 
                                         <a title="Atualizar" href="editar_cliente.php?cod=<?= $dados['cod']; ?>" class="btn btn-sm btn-success"><i class="fas fa-edit">&nbsp;</i>Atualizar</a>
                                     </td>
